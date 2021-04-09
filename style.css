@@ -7,7 +7,8 @@
 .sr-only {
     visibility: hidden;
 }
-.pause{
+
+.pause {
     position: absolute;
     top: 28px;
     left: 22px;
@@ -15,6 +16,7 @@
     z-index: 200000000000000000000000000000000;
     cursor: pointer;
 }
+
 .hidden {
     width: 0;
     height: 0;
@@ -31,11 +33,40 @@ body {
     padding: 0;
     margin: 0;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     min-height: 100vh;
     font-family: "Londrina Solid", cursive;
     position: relative;
     background: #0d1117;
+    text-align: center;
+    zoom: 80%;
+    /* background-color: #0cbaba; */
+    /* background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%); */
+    background-color: #7f5a83;
+    background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+
+
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        width: 600px;
+        margin: auto;
+    }
+}
+
+.text {
+    width: 500px;
+    /* height: 500px; */
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #7f5a83;
+    background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+    color: #fff;
+    line-height: 3rem;
+    font-size: 25px;
 }
 
 .challenge-title {
@@ -93,7 +124,7 @@ body {
     font-weight: 100;
     transform: translateY(85px);
     /* padding: 1rem 0; */
-    background-color: #0d1117;
+    /* background-color: #0d1117; */
     -webkit-animation: showUp 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
     animation: showUp 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
 }
@@ -112,13 +143,17 @@ body {
     font-size: 5.5rem;
     color: white;
     transform: translateY(-85px);
-    background-color: #0d1117;
+    /* background-color: #0d1117; */
     padding: 1rem 0;
     -webkit-animation: showDown 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards 0.4s;
     animation: showDown 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards 0.4s;
     margin: 0 !important;
 }
-.hb-container h3{margin: 0 !important;}
+
+.hb-container h3 {
+    margin: 0 !important;
+}
+
 .hb-container .ballon {
     position: absolute;
     height: 150px;
@@ -360,3 +395,4 @@ body {
     height: 100%;
     width: 100%;
 }
+
