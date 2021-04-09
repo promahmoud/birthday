@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
             }
 
-        }, 3000);
+        }, 5000);
 
 
         pause.addEventListener ("click", togglePlay, false);
