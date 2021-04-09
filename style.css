@@ -424,6 +424,7 @@ body {
         right: -118px;
     }
     .pause {
+     position: fixed;
     top: 53px;
     }
 
